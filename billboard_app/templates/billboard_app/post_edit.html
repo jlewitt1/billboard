@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Post</title>
+</head>
+<body>
+
+{% extends 'billboard_app/index.html' %}
+
+{% block content %}
+    <h1>New post</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default" id="save">Save</button>
+        <button type="submit" class="save btn btn-default" id="delete">Delete</button>
+    </form>
+{% endblock %}
+
+</body>
+</html>
+
