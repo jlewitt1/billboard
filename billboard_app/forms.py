@@ -4,16 +4,21 @@ from django import forms
 
 
 #creating forms from model (modelForm)
-class PostForm(forms.ModelForm):
+class PostForm(ModelForm):
     class Meta:
         model = Post
-        fields = {'posts_title','posts_text','posts_author', 'posts_pub_date'}
+        fields = ['posts_pub_date','posts_title','posts_text','posts_author']
         widgets = {
-        'posts_pub_date': forms.HiddenInput(),
-        'posts_text': forms.Textarea(attrs={'placeholder': 'Your message here'}),
-        'posts_title': forms.TextInput(attrs={'placeholder': 'Title'}),
-        'posts_author': forms.TextInput(attrs={'placeholder': 'Author'})
+            'posts_pub_date': forms.HiddenInput(),
+            'posts_title': forms.TextInput(attrs={'placeholder': 'Title', 'id': 'titleField'}),
+            'posts_text': forms.Textarea(attrs={'placeholder': 'Your message here', 'id':'textField'}),
+            'posts_author': forms.TextInput(attrs={'placeholder': 'Author', 'id':'authorField'})
         }
 
-
-#HiddenInput
+    # def __init__(self, *args, **kwargs):
+    #     super(PostForm, self).__init__(*args, **kwargs)
+    #     self.fields.keyOrder = [
+    #         'posts_pub_date',
+    #         'posts_title',
+    #         'posts_text',
+    #         'posts_author']

@@ -7,8 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton|Pinyon+Script|Poiret+One" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="{% static 'js/billboard_app.js' %}"></script>
 	<link href="{% static 'css/billboard_app.css' %}" rel="stylesheet" type="text/css">
@@ -25,36 +27,45 @@
             {% if latest_post_list %}
                 {% for post in latest_post_list %}
             <div class = "post-wrapper">
-                    <div class = "date">{{post.posts_pub_date|date:"F j, Y"}}</div>
+                    <div class = "date">{{post.posts_pub_date|date:"d/m/Y"}}</div>
                     <div class = "title">{{post.posts_title}}</div>
                     <div class = "text">{{post.posts_text}}</div>
                     <div class = "author">{{post.posts_author}}</div>
             </div>
                 {% endfor %}
+
+            {% else %}
+                <div class = "error-container">
+                    <div class = "row">
+                       <div class = "col-md-12">
+                            <span class = "messageOne">No Messages...</span><br/>
+                            <span class = "messageTwo">Click the '+' button to add a new message</span><br/>
+                            <div class = "button-wrapper">
+                                <button type="submit" class="add btn btn-default" id="add">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             {% endif %}
+
         </div>
     </div>
 </div>
 {% block content %}
 {% endblock %}
-<!--<div class = "message-container">-->
-    <!--<div class = "row">-->
-        <!--<div class = "col-md-12">-->
-            <!--<p class = "message">No Messages</p>-->
-            <!--<p class = "message">Click the '+' button to add a new message</p>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
+<div class = "collapse-form">
+    <div class = "submit-form">
+        <div class = "form-wrapper">
+            <form method="POST" class="post-form">{% csrf_token %}
+                {{ form.as_p }}
+                 <div class = "button-wrapper">
+                    <button type="submit" class="save btn btn-default" id="save"><i class="fa fa-check" aria-hidden="true"></i></button>
+                 </div>
+            </form>
+        </div>
+</div>
 
-<div class = "submit-form">
-    <div class = "form-wrapper">
-        <form method="POST" class="post-form">{% csrf_token %}
-            {{ form.as_p }}
-        </form>
-    </div>
-    <div class = "button-wrapper">
-        <button type="submit" class="save btn btn-default" id="save">+</button>
-    </div>
     <!--&lt;!&ndash;<button type="submit" class="btn btn-default" id="close">&gt;Close</button>&ndash;&gt;-->
     <!--&lt;!&ndash;<button type="submit" class="btn btn-default" id="submit">&gt;Submit</button>&ndash;&gt;-->
 </div>

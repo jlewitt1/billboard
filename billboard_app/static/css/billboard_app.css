@@ -35,7 +35,6 @@ h1 {
     text-align: center;
 }
 
-
 .date {
     font-family: 'Poiret One', cursive;
     font-size: 16px;
@@ -44,15 +43,22 @@ h1 {
     margin-left: 1%;
     background-color: white;
     position: absolute;
-    /* right: 74%; */
-    /* z-index: 12345; */
 }
 
-.message {
+.messageOne {
     font-family: Arial;
-    font-size: 16px;
+    font-size: 24px;
     color: black;
     text-align: center;
+    margin-left:41%;
+}
+
+.messageTwo {
+    font-family: Arial;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    margin-left: 25%;
 }
 
 #textBox {
@@ -76,17 +82,28 @@ h1 {
     text-align: left;
 }
 
-#id_posts_text{
-    height:100px;
+#textField {
     width:98%;
-    font-family: Arial;
-    font-size: 16px;
+    max-width:98%;
+    height:100px;
+    max-height: 200px;
+    font-size:14px;
 }
 
-#id_posts_title{
+#authorField {
     text-align: left;
     font-family: Arial;
-    font-size: 16px;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: 16px;
+    width: 160px;
+    display: block;
+}
+
+#titleField {
+    text-align: left;
+    font-family: Arial;
+    font-size: 14px;
 }
 
 .submit-form {
@@ -97,21 +114,22 @@ h1 {
     margin-top: 3%;
 }
 
-.button-wrapper button, .btn-default {
+button-wrapper button, .btn-default {
     color: white;
-    margin-left: 45%;
-    border: 1px dashed black;
-    width: 40px;
+    margin-left: 46%;
+    width: 68px;
+    border-radius: 3px;
     background-image: linear-gradient(to bottom,#fff 0,#66CDAA 1%);
 }
 
-.form-wrapper {
+.post-form {
     border:2px dashed #00b7ef
-
 }
+
 .button-wrapper {
-    border: 1px dashed black;
     margin-top: 2%;
+    margin-bottom: 2%;
+    border: 1px dashed black;
 }
 
 label {
@@ -121,4 +139,12 @@ label {
 p {
     margin-left:1%;
     margin-top:1%;
+}
+
+.page-header {
+    border-bottom: none;
+}
+
+i {
+    color: white;
 }

@@ -13,9 +13,7 @@ from models import Post
 # Create your views here.
 
 def index(request):
-    latest_post_list = Post.objects.order_by('posts_pub_date')[:5]
-    # template = loader.get_template('billboard_app/index.html')
-    # form = PostForm(request.POST)
+    latest_post_list = Post.objects.order_by('-posts_pub_date')[:5]
 
     if request.method == "POST":
         form = PostForm(request.POST)
@@ -27,7 +25,7 @@ def index(request):
                 # return redirect('post_detail', pk=post.pk)
             return redirect('/')
     else:
-        form = PostForm()
+        form = PostForm(initial= {'posts_pub_date':datetime.datetime.now()})
 
     context = {
         'latest_post_list': latest_post_list,
@@ -35,30 +33,4 @@ def index(request):
     }
     return render(request, 'billboard_app/index.html', context)
 
-# def post_new(request):
-#     if request.method == "POST":
-#         form = PostForm(request.POST)
-#         if form.is_valid():
-#             post = form.save(commit=False)
-#             post.author = request.user
-#             post.published_date = timezone.now()
-#             post.save()
-#             return redirect('post_detail', pk=post.pk)
-#             # return redirect('/')
-#     else:
-#         form = PostForm()
-#     return render(request, 'billboard_app/post_edit.html', {'form': form})
-#
-# def post_edit(request, pk):
-#     post = get_object_or_404(Post, pk=pk)
-#     if request.method == "POST":
-#         form = PostForm(request.POST, instance=post)
-#         if form.is_valid():
-#             post = form.save(commit=False)
-#             post.author = request.user
-#             post.published_date = timezone.now()
-#             post.save()
-#             return redirect('post_detail', pk=post.pk)
-#     else:
-#         form = PostForm()
-#     return render(request, 'billboard_app/post_edit.html', {'form': form})
+
