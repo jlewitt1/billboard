@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e292976-96c4-4405-b85f-8af1c6a8083c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/billboard_app/templates/billboard_app/post_detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/billboard_app/templates/billboard_app/post_edit.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/billboard_app/static/css/billboard_app.css" afterPath="$PROJECT_DIR$/billboard_app/static/css/billboard_app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/billboard_app/static/js/billboard_app.js" afterPath="$PROJECT_DIR$/billboard_app/static/js/billboard_app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/billboard_app/templates/billboard_app/index.html" afterPath="$PROJECT_DIR$/billboard_app/templates/billboard_app/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,8 +63,8 @@
       <file leaf-file-name="billboard_app.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/billboard_app/static/css/billboard_app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-315">
-              <caret line="138" column="29" lean-forward="true" selection-start-line="138" selection-start-column="29" selection-end-line="138" selection-end-column="29" />
+            <state relative-caret-position="215">
+              <caret line="90" column="21" lean-forward="false" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -86,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="billboard_app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="billboard_app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/billboard_app/static/js/billboard_app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="258">
+              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -108,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/billboard_app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+            <state relative-caret-position="146">
+              <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -155,6 +151,7 @@
       <find>messa</find>
       <find>dashed</find>
       <find>button-wrappe</find>
+      <find>textfie</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,10 +171,10 @@
         <option value="$PROJECT_DIR$/billboard/settings.py" />
         <option value="$PROJECT_DIR$/billboard_app/models.py" />
         <option value="$PROJECT_DIR$/billboard_app/forms.py" />
-        <option value="$PROJECT_DIR$/billboard_app/views.py" />
-        <option value="$PROJECT_DIR$/billboard_app/static/css/billboard_app.css" />
         <option value="$PROJECT_DIR$/billboard_app/templates/billboard_app/index.html" />
         <option value="$PROJECT_DIR$/billboard_app/static/js/billboard_app.js" />
+        <option value="$PROJECT_DIR$/billboard_app/static/css/billboard_app.css" />
+        <option value="$PROJECT_DIR$/billboard_app/views.py" />
       </list>
     </option>
   </component>
@@ -777,16 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/billboard_app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/billboard_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -813,16 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/billboard_app/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/billboard_app/templates/billboard_app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="47">
@@ -831,19 +808,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/billboard_app/static/css/billboard_app.css">
+    <entry file="file://$PROJECT_DIR$/billboard_app/static/js/billboard_app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
-          <caret line="138" column="29" lean-forward="true" selection-start-line="138" selection-start-column="29" selection-end-line="138" selection-end-column="29" />
+        <state relative-caret-position="258">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/billboard_app/static/js/billboard_app.js">
+    <entry file="file://$PROJECT_DIR$/billboard_app/static/css/billboard_app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="215">
+          <caret line="90" column="21" lean-forward="false" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/billboard_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/billboard_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

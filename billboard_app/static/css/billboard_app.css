@@ -88,6 +88,7 @@ h1 {
     height:100px;
     max-height: 200px;
     font-size:14px;
+    overflow: scroll;
 }
 
 #authorField {
